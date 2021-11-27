@@ -61,6 +61,7 @@ def read_excel_file(filepath):
         res = sck.do_put(url, headers, data)
         print(res.text)
         print(res.status_code)
+        print('hello world')
 
 
 if __name__ == '__main__':
