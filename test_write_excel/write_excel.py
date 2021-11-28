@@ -21,7 +21,7 @@ def write_excel():
         sheet.cell(1, i+1, list1[i])
 
     # 保存文件
-    excel.save('这是第一个测试文件.xlsx')
+    excel.save('这是写入一行的测试文件.xlsx')
 
 if __name__ == '__main__':
     write_excel()
