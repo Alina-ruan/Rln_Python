@@ -16,8 +16,11 @@ read_data()
 
 #写入多行文件
 def write_many_lines():
+    # 创建表格对象
     work_book = openpyxl.Workbook()
+    # 创建sheet
     sheet = work_book.create_sheet('new')
+    # 读取数据
     data = open(r'./test_data.txt', 'r', encoding='utf-8')
     datas = data.readlines()
     #通过enumerate方法来给每一行创建索引
